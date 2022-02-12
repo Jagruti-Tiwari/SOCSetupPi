@@ -41,8 +41,8 @@ user=`whoami`
  #Step III - Setup suricata as service
 
  touch “/etc/systemd/system/suricata.service”
-
- wget https://github.com/Jagruti-Tiwari/SOCSetupPi/blob/main/suricata.service
+ 
+ wget https://raw.githubusercontent.com/Jagruti-Tiwari/SOCSetupPi/main/suricata.service
  cp suricata.service /etc/systemd/system/suricata.service
  sudo systemctl enable suricata.service
 
